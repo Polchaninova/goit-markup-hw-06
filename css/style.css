@@ -168,12 +168,6 @@ img {
   fill: var(--color-text-deck);
   transition: fill 250ms var(--timing-function);
 }
-/* .email-img:hover,
-.email-img:focus,
-.email-tel:hover,
-.email-tel:focus {
-  fill: var(--color-action);
-} */
 
 .header_link_email:hover .email-img,
 .header_link_email:focus .email-img,
@@ -743,24 +737,131 @@ address {
   width: 30px;
   height: 30px;
 
+  font-weight: 600;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: var(--color-background-primary);
-  font-weight: 600;
+
+  transition: color 250ms var(--timing-function);
+}
+
+.btn_close_modal:hover,
+.btn_close_modal:focus {
+  color: var(--color-action);
 }
 .form {
+  /* max-width: 448px; */
+  font-family: "Roboto";
+  padding: 40px;
+}
+.form_field {
   display: flex;
   flex-direction: column;
-  width: 600px;
+
+  margin-bottom: 10px;
 }
-.form_title {
+.form .form_title {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--color-primary);
 }
-label {
+
+.form_field label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+
+  color: var(--color-text-deck);
 }
-input {
+.mail-svg {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 2;
 }
-textarea {
+.form_field input#email {
+  position: relative;
+}
+.form_field input {
+  margin-top: 4px;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border 250ms var(--timing-function);
+}
+.form_field input:hover,
+.form_field input:focus {
+  border: 1px solid var(--color-action);
+}
+
+.form_field textarea {
+  margin-top: 4px;
+  padding: 12px 16px;
+
+  width: 448px;
+  height: 120px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
   resize: none;
+  transition: border 250ms var(--timing-function);
 }
-.btn_submit {
+.form_field textarea:hover,
+.form_field textarea:focus {
+  border: 1px solid var(--color-action);
+}
+.form_field input::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  font-size: 12px;
+}
+.checkbox_submit {
+  text-align: center;
+}
+.checkbox_submit input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  font-size: 14px;
+  line-height: 2;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  transition: border 250ms var(--timing-function);
+}
+
+.checkbox_submit label {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--color-text-deck);
+}
+.checkbox_submit .btn_submit {
+  padding: 10px 52px;
+  margin-top: 30px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--color-invert);
+  letter-spacing: 0.06em;
+  background-color: var(--color-action);
+  border-color: var(--color-action);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-color 250ms var(--timing-function);
+}
+.btn_submit:hover,
+.btn_submit :focus {
+  background-color: var(--background-color-even);
+}
+.policy_link {
+  text-decoration: underline;
+  color: var(--color-action);
 }

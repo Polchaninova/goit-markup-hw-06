@@ -514,7 +514,7 @@
       <div class="modal">
         <button data-modal-close class="btn_close_modal">✕</button>
         <form class="form">
-          <h3 class="form_title">Залиште свої дані, ми вам передзвонимо</h3>
+          <h2 class="form_title">Залиште свої дані, ми вам передзвонимо</h2>
           <div class="form_field">
             <label for="name">
               Ім'я
@@ -530,10 +530,15 @@
           <div class="form_field">
             <label for="email">
               Пошта
+
+              <svg class="mail-svg" width="16" height="12">
+                <use href="./image/sprite.svg#icon-vector"></use>
+              </svg>
+
               <input type="email" name="email" id="email" placeholder="" />
             </label>
           </div>
-          <div class="form_field">
+          <div class="form_field text_comment">
             <label for="comment">
               Коментар
               <textarea
@@ -545,14 +550,14 @@
               ></textarea>
             </label>
           </div>
-          <div class="form_field">
+          <div class="checkbox_submit">
             <input type="checkbox" name="policy" id="policy" />
             <label for="policy"
-              >Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a>
+              >Погоджуюся з розсилкою та приймаю
+              <a class="policy_link" href="#">Умови договору</a>
             </label>
+            <button class="btn_submit" type="submit">Відправити</button>
           </div>
-
-          <button class="btn_submit" type="submit">Відправити</button>
         </form>
       </div>
     </div>

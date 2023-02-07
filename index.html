@@ -501,7 +501,7 @@
           <button type="submit">
             Підписатись
             <a href="" class="">
-              <svg class="social_icon" width="20px" height="20px">
+              <svg class="social_icon">
                 <use href="./image/sprite.svg#icon-telegram"></use>
               </svg>
             </a>
@@ -513,49 +513,76 @@
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button data-modal-close class="btn_close_modal">✕</button>
-        <form class="form">
-          <h2 class="form_title">Залиште свої дані, ми вам передзвонимо</h2>
+        <h3 class="form_title">Залиште свої дані, ми вам передзвонимо</h3>
+        <form class="form" autocomplete="off">
           <div class="form_field">
-            <label for="name">
-              Ім'я
-              <input type="text" name="name" id="name" placeholder="" />
-            </label>
-          </div>
-          <div class="form_field">
-            <label for="phone">
-              Телефон
-              <input type="tel" name="phone" id="phone" placeholder="" />
-            </label>
-          </div>
-          <div class="form_field">
-            <label for="email">
-              Пошта
-
-              <svg class="mail-svg" width="16" height="12">
-                <use href="./image/sprite.svg#icon-vector"></use>
+            <span class="form_icon">
+              <svg class="icon_svg">
+                <use href="./image/sprite.svg#icon-person"></use>
               </svg>
+            </span>
+            <label class="form_label" for="name">Ім'я</label>
 
-              <input type="email" name="email" id="email" placeholder="" />
-            </label>
+            <input
+              class="input_form"
+              type="text"
+              name="name"
+              id="name"
+              placeholder=" "
+            />
           </div>
-          <div class="form_field text_comment">
-            <label for="comment">
-              Коментар
-              <textarea
-                name="comment"
-                id="comment"
-                cols=""
-                rows="10"
-                placeholder="Введіть текст"
-              ></textarea>
-            </label>
+          <div class="form_field">
+            <span class="form_icon">
+              <svg class="icon_svg">
+                <use href="./image/sprite.svg#icon-phone"></use>
+              </svg>
+            </span>
+            <label class="form_label" for="phone"> Телефон</label>
+
+            <input
+              class="input_form"
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder=" "
+            />
+          </div>
+
+          <div class="form_field">
+            <span class="form_icon">
+              <svg class="icon_svg">
+                <use href="./image/sprite.svg#icon-email_black"></use>
+              </svg>
+            </span>
+            <label class="form_label" for="email"> Пошта </label>
+            <input
+              class="input_form"
+              type="email"
+              name="email"
+              id="email"
+              placeholder=" "
+            />
+          </div>
+          <div class="text_comment">
+            <label class="form_label" for="comment"> Коментар</label>
+            <textarea
+              name="comment"
+              id="comment"
+              cols=" "
+              rows=" "
+              placeholder="Введіть текст"
+            ></textarea>
           </div>
           <div class="checkbox_submit">
-            <input type="checkbox" name="policy" id="policy" />
-            <label for="policy"
+            <input class="checkbox" type="checkbox" name="policy" id="policy" />
+            <span class="checkbox_icon"></span>
+
+            <label class="label_policy" for="policy"
               >Погоджуюся з розсилкою та приймаю
               <a class="policy_link" href="#">Умови договору</a>
             </label>
+          </div>
+          <div class="submit">
             <button class="btn_submit" type="submit">Відправити</button>
           </div>
         </form>

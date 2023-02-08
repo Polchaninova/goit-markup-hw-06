@@ -495,13 +495,24 @@
             </li>
           </ul>
         </div>
-        <form class="is-speaker-form">
-          <label for="mail"></label>
-          <input type="email" name="mail" id="mail" />
-          <button type="submit">
+
+        <form class="footer_form">
+          <div class="footer_label_input">
+            <label class="footer_form_label" for="mail"
+              >Підпишіться на розсилку</label
+            >
+            <input
+              class="footer_form_input"
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="E-mail"
+            />
+          </div>
+          <button class="footer_form_btn" type="submit">
             Підписатись
-            <a href="" class="">
-              <svg class="social_icon">
+            <a href="#" class="footer_form_link">
+              <svg class="footer_form_icon">
                 <use href="./image/sprite.svg#icon-telegram"></use>
               </svg>
             </a>
@@ -543,6 +554,7 @@
               </svg>
             </span>
           </label>
+
           <label class="form_label">
             <span class="form_text_label">Пошта </span>
             <span class="form_field">

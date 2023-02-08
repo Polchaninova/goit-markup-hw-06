@@ -528,6 +528,64 @@ address {
 
   color: var(--color-opacity);
 }
+.footer_form {
+  display: flex;
+
+  margin-left: auto;
+}
+.footer_form_label {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.footer_form_input {
+  display: flex;
+
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  color: #fff;
+}
+.footer_form_input::placeholder {
+  color: #fff;
+}
+.footer_form_btn {
+  display: flex;
+  margin-top: 32px;
+  margin-left: 12px;
+
+  padding: 10px 28px 10px 28px;
+  background: #2196f3;
+  border: 1px solid #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #ffffff;
+  letter-spacing: 0.06em;
+}
+.footer_form_link {
+  margin-left: 10px;
+}
+.footer_form_icon {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+}
+
 .flex {
   display: flex;
   align-items: baseline;
@@ -795,7 +853,6 @@ address {
   transition: border-color 250ms var(--timing-function);
 }
 
-.form_input:hover,
 .form_input:focus {
   outline: none;
   border-color: var(--color-action);
@@ -815,7 +872,6 @@ address {
   transition: fill 250ms var(--timing-function);
 }
 
-.form_input:hover + .icon_svg,
 .form_input:focus + .icon_svg {
   fill: var(--color-action);
 }
@@ -831,7 +887,6 @@ address {
   resize: none;
 }
 
-.form_textarea:hover,
 .form_textarea:focus {
   outline: none;
   border-color: var(--color-action);
@@ -872,7 +927,7 @@ address {
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
-  border-radius: 4px;
+  border-radius: 2px;
 
   transition: border-color 250ms var(--timing-function);
 }
@@ -916,10 +971,13 @@ address {
   color: var(--color-invert);
   background-color: var(--color-action);
   border-color: var(--color-action);
-
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  transition: background-color 250ms var(--timing-function);
+
+  transition: background-color 250ms var(--timing-function),
+    color 250ms var(--timing-function),
+    border-color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
 }
 .btn_submit:hover,
 .btn_submit :focus {

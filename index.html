@@ -513,78 +513,72 @@
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button data-modal-close class="btn_close_modal">✕</button>
-        <h3 class="form_title">Залиште свої дані, ми вам передзвонимо</h3>
-        <form class="form" autocomplete="off">
-          <div class="form_field">
-            <span class="form_icon">
+        <b class="modal_call_action">Залиште свої дані, ми вам передзвонимо</b>
+        <form class="form">
+          <label class="form_label">
+            <span class="form_text_label">Ім'я</span>
+            <span class="form_field">
+              <input
+                class="form_input"
+                type="text"
+                name="user_name"
+                placeholder=" "
+              />
               <svg class="icon_svg">
                 <use href="./image/sprite.svg#icon-person"></use>
               </svg>
             </span>
-            <label class="form_label" for="name">Ім'я</label>
-
-            <input
-              class="input_form"
-              type="text"
-              name="name"
-              id="name"
-              placeholder=" "
-            />
-          </div>
-          <div class="form_field">
-            <span class="form_icon">
+          </label>
+          <label class="form_label">
+            <span class="form_text_label">Телефон</span>
+            <span class="form_field">
+              <input
+                class="form_input"
+                type="tel"
+                name="user_phone"
+                placeholder=" "
+              />
               <svg class="icon_svg">
                 <use href="./image/sprite.svg#icon-phone"></use>
               </svg>
             </span>
-            <label class="form_label" for="phone"> Телефон</label>
-
-            <input
-              class="input_form"
-              type="tel"
-              name="phone"
-              id="phone"
-              placeholder=" "
-            />
-          </div>
-
-          <div class="form_field">
-            <span class="form_icon">
+          </label>
+          <label class="form_label">
+            <span class="form_text_label">Пошта </span>
+            <span class="form_field">
+              <input
+                class="form_input"
+                type="email"
+                name="user_email"
+                placeholder=" "
+              />
               <svg class="icon_svg">
                 <use href="./image/sprite.svg#icon-email_black"></use>
               </svg>
             </span>
-            <label class="form_label" for="email"> Пошта </label>
-            <input
-              class="input_form"
-              type="email"
-              name="email"
-              id="email"
-              placeholder=" "
-            />
-          </div>
-          <div class="text_comment">
-            <label class="form_label" for="comment"> Коментар</label>
+          </label>
+          <label class="">
+            <span class="form_text_label">Коментар </span>
             <textarea
-              name="comment"
-              id="comment"
-              cols=" "
-              rows=" "
+              class="form_textarea"
+              name="user_massage"
               placeholder="Введіть текст"
             ></textarea>
-          </div>
-          <div class="checkbox_submit">
-            <input class="checkbox" type="checkbox" name="policy" id="policy" />
-            <span class="checkbox_icon"></span>
-
-            <label class="label_policy" for="policy"
-              >Погоджуюся з розсилкою та приймаю
-              <a class="policy_link" href="#">Умови договору</a>
+          </label>
+          <div class="form_checkbox_wrapper">
+            <input
+              class="checkbox"
+              name="accept_policy"
+              type="checkbox"
+              id="policy_checkbox"
+            />
+            <label class="label_policy" for="policy_checkbox"
+              >Погоджуюся з розсилкою та приймаю &nbsp;
+              <a class="policy_checkbox_link" href="#">Умови договору</a>
             </label>
           </div>
-          <div class="submit">
-            <button class="btn_submit" type="submit">Відправити</button>
-          </div>
+
+          <button class="btn_submit" type="submit">Відправити</button>
         </form>
       </div>
     </div>

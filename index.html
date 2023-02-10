@@ -506,23 +506,25 @@
               required
             />
           </div>
-          <div class="footer_form_btn_svg">
-            <button class="footer_form_btn" type="submit">
-              Підписатись
-              <a href="#" class="footer_form_link">
-                <svg class="footer_form_icon">
-                  <use href="./image/sprite.svg#icon-telegram"></use>
-                </svg>
-              </a>
-            </button>
-          </div>
+
+          <button class="footer_form_btn" type="submit">
+            Підписатись
+
+            <svg class="footer_form_icon">
+              <use href="./image/sprite.svg#icon-telegram"></use>
+            </svg>
+          </button>
         </form>
       </div>
     </footer>
 
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
-        <button data-modal-close class="btn_close_modal">✕</button>
+        <button data-modal-close class="btn_close_modal">
+          <svg class="modal_svg_close">
+            <use href="./image/sprite.svg#icon-close_modal"></use>
+          </svg>
+        </button>
         <b class="modal_call_action">Залиште свої дані, ми вам передзвонимо</b>
         <form class="form">
           <label class="form_label">
